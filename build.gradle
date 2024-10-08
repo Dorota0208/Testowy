@@ -14,7 +14,10 @@ dependencies {
 }
 
 test {
-    useTestNG()
+    useTestNG(){
+        includeGroups "Addition", "Subtraction"
+    }
+
     testLogging {
         events "passed", "skipped", "failed"
     }
